@@ -5,7 +5,7 @@
             ?>
             <h2 class="p-name h-<?= $vars['object']->getCategory() ?>">
                 <a class="u-url" href="<?= $vars['object']->getDisplayURL() ?>">
-                    <?= $vars['object']->getCategory(); ?></span> <?= htmlentities(strip_tags($vars['object']->getTitle()), ENT_QUOTES, 'UTF-8'); ?>
+                    <?= ucwords($vars['object']->getCategory()); ?></span> a <?= htmlentities(strip_tags($vars['object']->getTitle()), ENT_QUOTES, 'UTF-8'); ?>
                 </a>
             </h2>
             <?php
