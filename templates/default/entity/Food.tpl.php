@@ -5,7 +5,8 @@
             ?>
             <h2 class="p-name h-<?= $vars['object']->getCategory() ?>">
                 <a class="u-url" href="<?= $vars['object']->getDisplayURL() ?>">
-                    <?= ucwords($vars['object']->getCategory()); ?></span> a <?= htmlentities(strip_tags($vars['object']->getTitle()), ENT_QUOTES, 'UTF-8'); ?>
+                   <i class="fa <?= $vars['object']->getCategoryIcon() ?>"></i>
+                    <?= htmlentities(strip_tags($vars['object']->getTitle()), ENT_QUOTES, 'UTF-8'); ?>
                 </a>
             </h2>
             <?php
@@ -38,7 +39,7 @@
     ?>
             
             <div class="e-content">
-                <?= $this->__(['value' => $vars['object']->body, 'object' => $vars['object'], 'rel' => $rel])->draw('forms/output/richtext'); ?>
+                <?= $this->__(['value' => $vars['object']->body, 'object' => $vars['object']])->draw('forms/output/richtext'); ?>
             </div>
             
             <div style="display: none;">

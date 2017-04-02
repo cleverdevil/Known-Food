@@ -96,6 +96,8 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="#" data-category="ate" class="category-option"><i class="fa fa-cutlery"></i> Ate </a></li>
                                     <li><a href="#" data-category="drank" class="category-option"><i class="fa fa-glass"></i> Drank </a></li>
+                                    <li><a href="#" data-category="drank-coffee" class="category-option"><i class="fa fa-coffee"></i> Drank </a></li>
+                                    <li><a href="#" data-category="drank-beer" class="category-option"><i class="fa fa-beer"></i> Drank </a></li>
                                 </ul>
                             </div>
                         </div>

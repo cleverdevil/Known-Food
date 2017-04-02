@@ -1,4 +1,5 @@
 <?php
+    
 
     namespace IdnoPlugins\Food {
 
@@ -6,12 +7,23 @@
 
         class Food extends \Idno\Common\Entity
         {
+            public $mapping = array(
+                'ate' => 'fa-cutlery',
+                'drank' => 'fa-glass',
+                'drank-coffee' => 'fa-coffee',
+                'drank-beer' => 'fa-beer'
+            );
 
             function getTitle()
             {
                 if (empty($this->title)) return 'Untitled';
 
                 return $this->title;
+            }
+            
+            function getCategoryIcon()
+            {
+                return $this->mapping[$this->category];
             }
 
             function getDescription()
@@ -81,7 +93,7 @@
                     $new = false;
                 }
                 $body = \Idno\Core\site()->currentPage()->getInput('body');
-
+                
                 $this->body            = $body;
                 $this->title           = \Idno\Core\site()->currentPage()->getInput('title');
                 $this->category        = \Idno\Core\site()->currentPage()->getInput('category');
@@ -91,7 +103,7 @@
                 if (empty($this->category)) {
                     $this->category = 'ate';
                 }
-
+                
                 if ($time = \Idno\Core\site()->currentPage()->getInput('created')) {
                     if ($time = strtotime($time)) {
                         $this->created = $time;
