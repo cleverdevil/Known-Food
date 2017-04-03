@@ -69,21 +69,6 @@
                 return 'food';
             }
 
-            /**
-             * Retrieve icon
-             * @return mixed|string
-             */
-            function getIcon()
-            {
-                $xpath = new \DOMXPath(@\DOMDocument::loadHTML($this->getDescription()));
-                $src   = $xpath->evaluate("string(//img/@src)");
-                if (!empty($src)) {
-                    return $src;
-                }
-
-                return parent::getIcon();
-            }
-
             function saveDataFromInput()
             {
 
