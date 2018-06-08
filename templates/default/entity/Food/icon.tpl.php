@@ -1,1 +1,1 @@
-<i class="fa fa-cutlery"></i>
+<i class="fa fa-coffee"></i>
