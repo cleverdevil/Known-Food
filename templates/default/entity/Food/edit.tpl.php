@@ -91,11 +91,11 @@
                         <div id="category" class="category">
                             <div class="btn-group">
                                 <a class="btn dropdown-toggle category" data-toggle="dropdown" href="#" id="category-button" aria-expanded="false">
-                                    <i class="fa fa-cutlery"></i> Ate <span class="caret"></span>
+                                    <i class="fa fa-utensils"></i> Ate <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#" data-category="ate" class="category-option"><i class="fa fa-cutlery"></i> Ate </a></li>
-                                    <li><a href="#" data-category="drank" class="category-option"><i class="fa fa-glass"></i> Drank </a></li>
+                                    <li><a href="#" data-category="ate" class="category-option"><i class="fa fa-utensils"></i> Ate </a></li>
+                                    <li><a href="#" data-category="drank" class="category-option"><i class="fa fa-glass-martini"></i> Drank </a></li>
                                     <li><a href="#" data-category="drank-coffee" class="category-option"><i class="fa fa-coffee"></i> Drank </a></li>
                                     <li><a href="#" data-category="drank-beer" class="category-option"><i class="fa fa-beer"></i> Drank </a></li>
                                 </ul>

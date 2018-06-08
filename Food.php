@@ -8,8 +8,8 @@
         class Food extends \Idno\Common\Entity
         {
             public $mapping = array(
-                'ate' => 'fa-cutlery',
-                'drank' => 'fa-glass',
+                'ate' => 'fa-utensils',
+                'drank' => 'fa-glass-martini',
                 'drank-coffee' => 'fa-coffee',
                 'drank-beer' => 'fa-beer'
             );
