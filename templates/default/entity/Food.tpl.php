@@ -1,4 +1,5 @@
-<article class="h-entry h-food">
+<article class="h-entry">
+    <data class="p-category" value="food">food</data>
     <?php
 
         if (\Idno\Core\site()->template()->getTemplateType() == 'default') {
@@ -39,6 +40,7 @@
     ?>
             
             <div class="e-content">
+                
                 <?= $this->__(['value' => $vars['object']->body, 'object' => $vars['object']])->draw('forms/output/richtext'); ?>
             </div>
             
