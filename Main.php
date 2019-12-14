@@ -5,10 +5,10 @@
         class Main extends \Idno\Common\Plugin {
 
             function registerPages() {
-                \Idno\Core\site()->addPageHandler('/food/edit/?', '\IdnoPlugins\Food\Pages\Edit');
-                \Idno\Core\site()->addPageHandler('/food/edit/([A-Za-z0-9]+)/?', '\IdnoPlugins\Food\Pages\Edit');
-                \Idno\Core\site()->addPageHandler('/food/delete/([A-Za-z0-9]+)/?', '\IdnoPlugins\Food\Pages\Delete');
-                \Idno\Core\site()->addPageHandler('/food/([A-Za-z0-9]+)/.*', '\Idno\Pages\Entity\View');
+                \Idno\Core\site()->routes()->addRoute('/food/edit/?', '\IdnoPlugins\Food\Pages\Edit');
+                \Idno\Core\site()->routes()->addRoute('/food/edit/([A-Za-z0-9]+)/?', '\IdnoPlugins\Food\Pages\Edit');
+                \Idno\Core\site()->routes()->addRoute('/food/delete/([A-Za-z0-9]+)/?', '\IdnoPlugins\Food\Pages\Delete');
+                \Idno\Core\site()->routes()->addRoute('/food/([A-Za-z0-9]+)/.*', '\Idno\Pages\Entity\View');
             }
 
             /**
