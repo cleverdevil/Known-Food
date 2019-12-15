@@ -40,7 +40,7 @@
     ?>
             
             <div class="e-content">
-                #<?= $vars['object']->getCategory-id() ?>"></i>
+                <?= "#".$vars['object']->getCategory-id() ?>"></i>
                 <?= $this->__(['value' => $vars['object']->body, 'object' => $vars['object']])->draw('forms/output/richtext'); ?>
             </div>
             
